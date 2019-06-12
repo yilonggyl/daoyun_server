@@ -42,7 +42,7 @@ public interface DaoyunuserDao {
     @Select("SELECT t.address,t.avatar,t.country,t.email,t.`group`,t.id,t.`name`,t.notifyCount,t.`password`,t.phone,t.role_id,t.signature,t.`status`,t.title,t.unreadCount,t.userid FROM daoyunuser as t ")
     List<JSONObject> getUerList();
 
-    @Update("UPDATE daoyunuser SET `password`='123' WHERE id=#{id}")
+    @Update("UPDATE daoyunuser SET `password`='123456' WHERE id=#{id}")
     void resetPassword(Long id);
 
 }

@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.ArrayList;
 import java.util.List;
 
-#123456
 @RestController
 @EnableAutoConfiguration
 public class AuthroutesApiController {
