@@ -4,34 +4,41 @@ package com.zw.admin.server.model;
 
 public class Daoyuncourse extends BaseEntity<Long> {
 
-	private String courseName;
-	private String teacherName;
-	private String courseClass;
-	private String type;
+	private String coursename;
+	private String teachername;
+	private String time;
+	private String intro;
+	private String info;
 
-	public String getCourseName() {
-		return courseName;
+	public String getCoursename() {
+		return coursename;
 	}
-	public void setCourseName(String courseName) {
-		this.courseName = courseName;
+	public void setCoursename(String coursename) {
+		this.coursename = coursename;
 	}
-	public String getTeacherName() {
-		return teacherName;
+	public String getTeachername() {
+		return teachername;
 	}
-	public void setTeacherName(String teacherName) {
-		this.teacherName = teacherName;
+	public void setTeachername(String teachername) {
+		this.teachername = teachername;
 	}
-	public String getCourseClass() {
-		return courseClass;
+	public String getTime() {
+		return time;
 	}
-	public void setCourseClass(String courseClass) {
-		this.courseClass = courseClass;
+	public void setTime(String time) {
+		this.time = time;
 	}
-	public String getType() {
-		return type;
+	public String getIntro() {
+		return intro;
 	}
-	public void setType(String type) {
-		this.type = type;
+	public void setIntro(String intro) {
+		this.intro = intro;
+	}
+	public String getInfo() {
+		return info;
+	}
+	public void setInfo(String info) {
+		this.info = info;
 	}
 
 }

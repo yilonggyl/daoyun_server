@@ -8,17 +8,20 @@
 			<if test="params.id != null and params.id != ''">
 				and id = #{params.id} 
 			</if>
-			<if test="params.courseName != null and params.courseName != ''">
-				and course_name = #{params.courseName} 
+			<if test="params.coursename != null and params.coursename != ''">
+				and coursename = #{params.coursename} 
 			</if>
-			<if test="params.teacherName != null and params.teacherName != ''">
-				and teacher_name = #{params.teacherName} 
+			<if test="params.teachername != null and params.teachername != ''">
+				and teachername = #{params.teachername} 
 			</if>
-			<if test="params.courseClass != null and params.courseClass != ''">
-				and course_class = #{params.courseClass} 
+			<if test="params.time != null and params.time != ''">
+				and time = #{params.time} 
 			</if>
-			<if test="params.type != null and params.type != ''">
-				and type = #{params.type} 
+			<if test="params.intro != null and params.intro != ''">
+				and intro = #{params.intro} 
+			</if>
+			<if test="params.info != null and params.info != ''">
+				and info = #{params.info} 
 			</if>
 		
 		</where>
@@ -39,17 +42,20 @@
 	<update id="update">
 		update daoyuncourse t
 		<set>
-			<if test="courseName != null">
-				course_name = #{courseName}, 
+			<if test="coursename != null">
+				coursename = #{coursename}, 
 			</if>
-			<if test="teacherName != null">
-				teacher_name = #{teacherName}, 
+			<if test="teachername != null">
+				teachername = #{teachername}, 
 			</if>
-			<if test="courseClass != null">
-				course_class = #{courseClass}, 
+			<if test="time != null">
+				time = #{time}, 
 			</if>
-			<if test="type != null">
-				type = #{type}, 
+			<if test="intro != null">
+				intro = #{intro}, 
+			</if>
+			<if test="info != null">
+				info = #{info}, 
 			</if>
 
 		</set>

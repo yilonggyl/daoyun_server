@@ -41,8 +41,11 @@
                                 <tr>
                                 </tr>                       
                                 <tr>
+									<th>note</th>
+									<th>uniqeKey</th>
 									<th>id</th>
 									<th>name</th>
+									<th>status</th>
 									<th>操作</th>
                                 </tr>
                             </thead>
@@ -85,8 +88,11 @@ function init(){
         	},
         	"dom": "<'dt-toolbar'r>t<'dt-toolbar-footer'<'col-sm-10 col-xs-12 hidden-xs'i><'col-xs-12 col-sm-10' p v>>",	
             "columns": [
+				{"data" : "note", "defaultContent" : ""},
+				{"data" : "uniqeKey", "defaultContent" : ""},
 				{"data" : "id", "defaultContent" : ""},
 				{"data" : "name", "defaultContent" : ""},
+				{"data" : "status", "defaultContent" : ""},
 				{ 
 								"data": "", 
 								"defaultContent": "",

@@ -24,7 +24,7 @@ public interface DaoyunroleDao {
     int update(Daoyunrole daoyunrole);
     
     @Options(useGeneratedKeys = true, keyProperty = "id")
-    @Insert("insert into daoyunrole(name) values(#{name})")
+    @Insert("insert into daoyunrole(note, uniqeKey, name, status) values(#{note}, #{uniqeKey}, #{name}, #{status})")
     int save(Daoyunrole daoyunrole);
     
     int count(@Param("params") Map<String, Object> params);

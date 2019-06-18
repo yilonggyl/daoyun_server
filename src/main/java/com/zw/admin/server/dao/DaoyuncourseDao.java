@@ -24,13 +24,13 @@ public interface DaoyuncourseDao {
     int update(Daoyuncourse daoyuncourse);
     
     @Options(useGeneratedKeys = true, keyProperty = "id")
-    @Insert("insert into daoyuncourse(course_name, teacher_name, course_class, type) values(#{courseName}, #{teacherName}, #{courseClass}, #{type})")
+    @Insert("insert into daoyuncourse(coursename, teachername, time, intro, info) values(#{coursename}, #{teachername}, #{time}, #{intro}, #{info})")
     int save(Daoyuncourse daoyuncourse);
     
     int count(@Param("params") Map<String, Object> params);
 
     List<Daoyuncourse> list(@Param("params") Map<String, Object> params, @Param("offset") Integer offset, @Param("limit") Integer limit);
 
-    @Select("select *from daoyuncourse")
+    @Select("select * from daoyuncourse")
     List<Daoyuncourse> getAll();
 }

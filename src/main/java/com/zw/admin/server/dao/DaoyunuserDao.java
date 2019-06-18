@@ -33,7 +33,7 @@ public interface DaoyunuserDao {
 
 
 
-    @Select("SELECT c.`name` from daoyunuser as t JOIN daoyunrole as c WHERE t.role_id=c.id AND t.`name`=#{userName} AND t.`password`=#{password}")
+    @Select("SELECT c.`uniqeKey` from daoyunuser as t JOIN daoyunrole as c WHERE t.role_id=c.id AND t.`name`=#{userName} AND t.`password`=#{password}")
     String getByLogin(LoginModel loginModel);
 
     @Select("SELECT t.address,t.avatar,t.country,t.email,t.`group`,t.id,t.`name`,t.notifyCount,t.`password`,t.phone,t.role_id,t.signature,t.`status`,t.title,t.unreadCount,t.userid FROM daoyunuser as t  WHERE t.`name`=#{name}")
